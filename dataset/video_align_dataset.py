@@ -91,6 +91,7 @@ class VideoAlignmentDataset(Dataset):
             )
             frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
             frame = frame.astype(np.float32) / 255.0
+            frame = (frame - self.image_mean) / self.image_std
 
             final_frames.append(frame)
 
