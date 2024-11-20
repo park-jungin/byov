@@ -1,4 +1,4 @@
-ckpt_dir=/data_path/AE2/AE2_ckpts
+ckpt_dir='ckpt_path'
 
 # use extracted embeddings (saved in ckpt_dir/$dataset_eval)
 for dataset in break_eggs pour_milk pour_liquid tennis_forehand; do
